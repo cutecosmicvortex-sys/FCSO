@@ -38,10 +38,10 @@ export const botConfig = {
   commands: {
     // Bot owner user IDs (comma-separated in OWNER_IDS env var).
     // Owners can access owner/admin-level bot commands.
-    owners: process.env.OWNER_IDS?.split(",") || [],
+    owners: process.env.OWNER_IDS?.split("878118686433640458") || [],
 
     // Default wait time between command uses (in seconds).
-    defaultCooldown: 3, 
+    defaultCooldown: 1, 
 
     // If true, old commands are removed before re-registering.
     deleteCommands: false,
@@ -281,7 +281,7 @@ export const botConfig = {
     announcementChannel: null,
 
     // Timezone used to calculate birthday dates.
-    timezone: "UTC",
+    timezone: "EST",
   },
 
   // =========================
@@ -437,7 +437,7 @@ export const botConfig = {
   features: {
     // Core systems.
     economy: true,
-    leveling: true,
+    leveling: false,
     moderation: true,
     logging: true,
     welcome: true,
@@ -445,7 +445,7 @@ export const botConfig = {
     // Community engagement systems.
     tickets: true,
     giveaways: true,
-    birthday: true,
+    birthday: false,
     counter: true,
 
     // Security and self-service systems.
